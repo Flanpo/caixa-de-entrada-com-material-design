@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="72dp"
+            android:layout_height="72dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/email_item_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:border_color="@color/background_dark"
+                app:border_width="0.5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="72dp">
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/primary_text"
+                android:id="@+id/email_item_titulo"
+                android:fontFamily="@string/font_family_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/primary_text"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:fontFamily="@string/font_family_regular"
+                    android:id="@+id/email_item_remetente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/primary_text"
+                    android:textSize="14sp"
+                    android:text=" - "
+                    android:fontFamily="@string/font_family_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/secondary_text"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:fontFamily="@string/font_family_light"
+                    android:id="@+id/email_item_corpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <View
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    
+</LinearLayout>
